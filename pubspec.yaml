@@ -1,0 +1,25 @@
+name: flutter_cough_analyzer
+description: A mobile app to analyze cough using TFLite models
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=2.17.0 <3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  tflite_flutter: ^0.10.3
+  file_picker: ^5.2.4
+  audiofileplayer: ^1.0.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/diagnosis.tflite
+    - assets/infection.tflite
+    - assets/cough_type.tflite
